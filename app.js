@@ -78,18 +78,22 @@ for(var i=0;i<bakery.length;i++){
 
 //task 15
 var pass = prompt("Enter Your password");
+var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 for (var i = 0; i < pass.length; i++) {
-    if (pass.length >= 6 && (pass[i] >= 'a' || pass[i] <= 'z' || pass[i] >= 'A' || pass[i] <= 'Z') || pass[i] >= 0) {
-        if(pass[0]!=0) {
+    for (var j = 0; j <= 10; j++) {
+        if (pass.length >= 6 && (pass[i] >= 'a' || pass[i] <= 'z' || pass[i] >= 'A' || pass[i] <= 'Z') && pass[0] != num[j]) {
+            
             alert("Password: " + pass);
             break;
-        }
+      }
+    
         else {
-            alert("Please enter a valid password");
-            break;
-        }
-    }
+        alert("Please enter a valid password");
+        break;
+    }}
+    break;
 }
+
 
 //task 16
 var university = "University of Karachi";
